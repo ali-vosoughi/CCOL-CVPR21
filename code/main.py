@@ -10,7 +10,8 @@ import torch.nn.functional as F
 import torch.nn as nn
 import numpy as np
 import scipy.io.wavfile as wavfile
-from scipy.misc import imsave
+# from scipy.misc import imsave
+from imageio import imwrite as imsave
 from mir_eval.separation import bss_eval_sources
 
 # Our libs
