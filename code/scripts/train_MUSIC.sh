@@ -2,8 +2,8 @@
 
 OPTS=""
 OPTS+="--id MUSIC_SOGO_COL "
-OPTS+="--list_train /home/cxu-serve/p1/ytian21/dat/AVSS_data/MUSIC_dataset/data/train.csv "
-OPTS+="--list_val /home/cxu-serve/p1/ytian21/dat/AVSS_data/MUSIC_dataset/data/val.csv "
+OPTS+="--list_train /mnt/ssd0/dat/sdeng10/MUSIC/train.csv "
+OPTS+="--list_val /mnt/ssd0/dat/sdeng10/MUSIC/val.csv "
 
 # Models
 OPTS+="--arch_sound_ground vggish "
