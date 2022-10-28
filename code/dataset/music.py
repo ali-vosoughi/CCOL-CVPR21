@@ -55,7 +55,7 @@ class MUSICMixDataset(BaseDataset):
                 infos[n] = sample
                 class_list.append(sample[0].split('/')[1])
         else:
-            csv_lis_path = "/home/cxu-serve/p1/ytian21/project/av-grounding/dataset/Music/test.csv"
+            csv_lis_path = "/localdisk2/dat/sdeng10/MUSIC/val.csv"
             csv_lis = []
             for row in csv.reader(open(csv_lis_path, 'r'), delimiter=','):
                 if len(row) < 2:
@@ -94,7 +94,7 @@ class MUSICMixDataset(BaseDataset):
             for i in range(self.num_frames):
                 idx_offset = (i - self.num_frames // 2) * self.stride_frames
                 path_frames[n].append(
-                    os.path.join("/home/cxu-serve/p1/ytian21/dat/AVSS_data/MUSIC_dataset/data/frames",
+                    os.path.join("/localdisk2/dat/sdeng10/MUSIC/frames",
                         path_frameN[1:],
                         '{:06d}.jpg'.format(center_frameN + idx_offset)))
                 path_frames_ids[n].append(center_frameN + idx_offset)
@@ -102,7 +102,7 @@ class MUSICMixDataset(BaseDataset):
                         path_frameN[1:]+'.npy')
             #print(path_frames_ids[n], path_frames_det[n])
 
-            path_audios[n] = os.path.join("/home/cxu-serve/p1/ytian21/dat/AVSS_data/MUSIC_dataset/data/audio", path_audioN[1:])
+            path_audios[n] = os.path.join("/localdisk2/dat/sdeng10/MUSIC/audio", path_audioN[1:])
             #print(path_audios[n])
 
         # load frames and audios, STFT
