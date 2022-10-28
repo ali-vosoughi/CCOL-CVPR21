@@ -98,7 +98,7 @@ class MUSICMixDataset(BaseDataset):
                         path_frameN[1:],
                         '{:06d}.jpg'.format(center_frameN + idx_offset)))
                 path_frames_ids[n].append(center_frameN + idx_offset)
-            path_frames_det[n] = os.path.join("/home/cxu-serve/p1/ytian21/dat/AVSS_data/MUSIC_dataset/data/detection_results",
+            path_frames_det[n] = os.path.join("/localdisk2/dat/sdeng10/MUSIC/detection_results",
                         path_frameN[1:]+'.npy')
             #print(path_frames_ids[n], path_frames_det[n])
 
