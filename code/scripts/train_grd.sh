@@ -2,8 +2,8 @@
 
 OPTS=""
 OPTS+="--id MUSIC_GRD "
-OPTS+="--list_train /localdisk2/dat/sdeng10/MUSIC/train.csv "
-OPTS+="--list_val /localdisk2/dat/sdeng10/MUSIC/val.csv "
+OPTS+="--list_train ../data/Music/train.csv "
+OPTS+="--list_val ../data/Music/val.csv "
 
 # Models
 OPTS+="--arch_sound_ground vggish "
