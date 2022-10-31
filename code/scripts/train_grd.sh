@@ -54,4 +54,4 @@ OPTS+="--disp_iter 20 "
 OPTS+="--num_vis 40 "
 OPTS+="--num_val 256 "
 
-python -u main_grd.py $OPTS
+python -u CUDA_VISIBLE_DEVICES="0" main_grd.py $OPTS
