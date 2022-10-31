@@ -4,6 +4,7 @@ Pytorch implementation for CVPR21 "Cyclic Co-Learning of Sounding Object Visual 
 
 ## Creating environment
 - conda create -n sop-pupil python=3.8.3
+- pip install -r requirements_macula.txt
 
 ![image](doc/ccol_fig.png)
 
