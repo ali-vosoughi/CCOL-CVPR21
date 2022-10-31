@@ -2,8 +2,10 @@
 
 OPTS=""
 OPTS+="--id MUSIC_COL "
-OPTS+="--list_train /localdisk2/dat/sdeng10/MUSIC/train.csv "
-OPTS+="--list_val /localdisk2/dat/sdeng10/MUSIC/val.csv "
+# OPTS+="--list_train /localdisk2/dat/sdeng10/MUSIC/train.csv "
+# OPTS+="--list_val /localdisk2/dat/sdeng10/MUSIC/val.csv "
+OPTS+="--list_train ../data/Music/train.csv "
+OPTS+="--list_val ../data/Music/val.csv "
 
 # Models
 OPTS+="--arch_sound_ground vggish "
@@ -38,9 +40,9 @@ OPTS+="--audLen 65535 " # 65535
 OPTS+="--audRate 11025 " #11025
 
 # learning params
-OPTS+="--num_gpus 3 "
+OPTS+="--num_gpus 1 "
 OPTS+="--workers 12 "
-OPTS+="--batch_size_per_gpu 8 "
+OPTS+="--batch_size_per_gpu 50 "
 OPTS+="--lr_frame 1e-4 "
 OPTS+="--lr_sound 1e-4 "
 OPTS+="--lr_sound_ground 1e-5 "
@@ -54,4 +56,4 @@ OPTS+="--disp_iter 20 "
 OPTS+="--num_vis 40 "
 OPTS+="--num_val 256 "
 
-python -u main_col.py $OPTS
+CUDA_VISIBLE_DEVICES="0" python -u main_col.py $OPTS
