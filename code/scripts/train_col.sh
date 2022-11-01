@@ -56,4 +56,4 @@ OPTS+="--disp_iter 20 "
 OPTS+="--num_vis 40 "
 OPTS+="--num_val 256 "
 
-CUDA_VISIBLE_DEVICES="0" python -u main_col.py $OPTS
+CUDA_VISIBLE_DEVICES="1" python -u main_col.py $OPTS

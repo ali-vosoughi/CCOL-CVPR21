@@ -59,4 +59,4 @@ OPTS+="--num_val 256 "
 # resume
 # OPTS+="--mode resume "
 
-CUDA_VISIBLE_DEVICES="0" python -u main_grd.py $OPTS
+CUDA_VISIBLE_DEVICES="1" python -u main_grd.py $OPTS
