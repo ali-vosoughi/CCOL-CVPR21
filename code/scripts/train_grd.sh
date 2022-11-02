@@ -48,7 +48,7 @@ OPTS+="--batch_size_per_gpu 50 "
 OPTS+="--lr_sound_ground 1e-4 "
 OPTS+="--lr_frame_ground 1e-4 "
 OPTS+="--lr_grounding 1e-4 "
-OPTS+="--num_epoch 40 "
+OPTS+="--num_epoch 1 "
 OPTS+="--lr_steps 20 30 "
 
 # display, viz
