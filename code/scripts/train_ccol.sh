@@ -52,7 +52,7 @@ OPTS+="--lr_sound_ground 1e-4 "
 OPTS+="--lr_synthesizer 1e-4 " #1e-4
 OPTS+="--lr_grounding 1e-4 "
 OPTS+="--num_epoch 60 "
-OPTS+="--lr_steps 30 50 "
+OPTS+="--lr_steps 20 30 "
 
 # display, viz
 OPTS+="--disp_iter 20 "
